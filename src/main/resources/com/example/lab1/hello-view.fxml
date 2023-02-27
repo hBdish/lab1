@@ -4,21 +4,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="359.0" prefWidth="313.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.HelloController">
+<VBox alignment="CENTER" prefHeight="404.0" prefWidth="434.0" spacing="20.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <TextArea fx:id="sumText" prefHeight="0.0" prefWidth="200.0" />
+   <TextArea fx:id="sumText" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" />
    <Button mnemonicParsing="false" onAction="#calcButton" text="Рассчитать" />
    <Button mnemonicParsing="false" onAction="#trunc" text="Округлить" />
    <Separator prefWidth="200.0" />
    <VBox prefHeight="100.0" prefWidth="270.0">
       <children>
-         <GridPane>
+         <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="335.0">
            <columnConstraints>
              <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.0" minWidth="10.0" prefWidth="55.0" />
-             <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="162.0" />
-               <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="56.0" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="196.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="109.0" />
            </columnConstraints>
            <rowConstraints>
              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -26,19 +26,43 @@
              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
            </rowConstraints>
             <children>
-               <TextArea fx:id="sum15" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+               <TextArea fx:id="sum15" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1">
+                  <GridPane.margin>
+                     <Insets bottom="5.0" top="5.0" />
+                  </GridPane.margin></TextArea>
                <Label text="15%" />
-               <Button mnemonicParsing="false" onAction="#select15" text="Select" GridPane.columnIndex="2" />
+               <Button mnemonicParsing="false" onAction="#select15" text="Выбрать" GridPane.columnIndex="2">
+                  <GridPane.margin>
+                     <Insets left="5.0" />
+                  </GridPane.margin></Button>
 
-               <TextArea fx:id="sum10" layoutX="75.0" layoutY="5.0" prefHeight="200.0" prefWidth="173.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <TextArea fx:id="sum10" layoutX="75.0" layoutY="5.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets top="5.0" />
+                  </GridPane.margin></TextArea>
                <Label layoutX="10.0" layoutY="17.0" text="10%" GridPane.rowIndex="1" />
-               <Button layoutX="227.0" layoutY="12.0" mnemonicParsing="false" onAction="#select10" text="Select" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               <Button layoutX="227.0" layoutY="12.0" mnemonicParsing="false" onAction="#select10" text="Выбрать" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                     <Insets left="5.0" />
+                  </GridPane.margin></Button>
                 
-               <TextArea fx:id="sum3" layoutX="75.0" layoutY="35.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <TextArea fx:id="sum3" layoutX="75.0" layoutY="35.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets top="5.0" />
+                  </GridPane.margin></TextArea>
                <Label layoutX="10.0" layoutY="47.0" text="3%" GridPane.rowIndex="2" />
-               <Button layoutX="227.0" layoutY="42.0" mnemonicParsing="false" onAction="#select3" text="Select" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               <Button layoutX="227.0" layoutY="42.0" mnemonicParsing="false" onAction="#select3" text="Выбрать" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <GridPane.margin>
+                     <Insets left="5.0" />
+                  </GridPane.margin></Button>
             </children>
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
          </GridPane>
-      </children></VBox>
+      </children>
+      <opaqueInsets>
+         <Insets right="5.0" />
+      </opaqueInsets></VBox>
    <Separator prefHeight="2.0" prefWidth="273.0" />
 </VBox>

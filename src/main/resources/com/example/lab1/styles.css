@@ -1,0 +1,13 @@
+*{
+-fx-font-size: 12pt;
+
+}
+
+.button {
+-fx-padding: 5 10 5 10;
+-fx-border-radius: 50px;
+}
+
+.button:focused {
+    -fx-background-color: grey;
+}
